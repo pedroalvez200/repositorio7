@@ -1,0 +1,16 @@
+qntRodas = int(input("Digite a quantidade de rodas: "))
+peso = float (input("Digite o peso bruto do veículo em KG: "))
+qntPessoas = int(input("Digite a quantidade de pessoas no veículo: "))
+
+if qntRodas<=3:
+    print("CATEGORIA A")
+elif qntRodas>=4:
+    if qntPessoas<=8 and peso<3500:
+        print("CATEGORIA B")
+    elif peso>=3500 and peso <=6000:
+        print("CATEGORIA C")
+    elif qntPessoas>8:
+        print("CATEGORIA D")
+    elif peso>6000:
+        print("CATEGORIA C")
+        
